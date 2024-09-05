@@ -1,4 +1,4 @@
-# Open Deploy [Project WIP]
+# Open Deploy
 
 ## Description
 I built this project as an OpenSource version of Render.com or Netlify.com. This project is a work in progress and is not yet ready for production use.
