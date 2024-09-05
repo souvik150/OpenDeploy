@@ -15,3 +15,7 @@ This project has the following main components:
 
 [![Postman Documentation](https://img.shields.io/badge/Postman-Documentation-orange)](https://documenter.getpostman.com/view/19816367/2sAXjQ2WB4)
 This project is documented using Postman. You can find the documentation above.
+
+## Internal Packages
+
+- [@open-deploy/prisma-shared](https://www.npmjs.com/package/@open-deploy/prisma-schema) - This is a shared library for Prisma data models. Any changes to the database schema should be made in this package.

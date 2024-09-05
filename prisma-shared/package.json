@@ -1,0 +1,23 @@
+{
+  "name": "@open-deploy/prisma-schema",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "UNLICENSED",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "generate": "npx prisma generate",
+    "postinstall": "npm run generate"
+  },
+  "devDependencies": {
+    "@prisma/client": "^5.19.1",
+    "prisma": "^5.19.1"
+  },
+  "peerDependencies": {
+    "@prisma/client": ">=5"
+  }
+}

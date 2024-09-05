@@ -2,9 +2,10 @@ const express = require("express");
 const { generateSlug } = require("random-word-slugs");
 const { ECSClient, RunTaskCommand } = require("@aws-sdk/client-ecs");
 const { Server } = require("socket.io");
-const Redis = require("ioredis");
 const { z } = require("zod");
-const { PrismaClient, DeployementStatus } = require("@prisma/client");
+const { DeployementStatus } = require("@prisma/client");
+const { PrismaClient } = require("@open-deploy/prisma-schema");
+
 const { createClient } = require("@clickhouse/client");
 const { Kafka } = require("kafkajs");
 const { v4: uuidv4 } = require("uuid");
@@ -61,7 +62,7 @@ const client = createClient({
 const consumer = kafka.consumer({ groupId: "api-server-logs-consumer" });
 
 const prisma = new PrismaClient({
-  log: ["query"],
+  // log: ["query"],
 });
 
 const io = new Server({ cors: "*" });

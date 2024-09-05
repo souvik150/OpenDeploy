@@ -12,6 +12,7 @@
   "dependencies": {
     "@aws-sdk/client-ecs": "^3.645.0",
     "@clickhouse/client": "^1.5.0",
+    "@open-deploy/prisma-schema": "^0.0.1",
     "@prisma/client": "^5.19.1",
     "dotconfig": "^0.0.1-security",
     "dotenv": "^16.4.5",
@@ -25,7 +26,6 @@
   },
   "devDependencies": {
     "@types/node": "^22.5.4",
-    "prisma": "^5.19.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.5.4"
   }
