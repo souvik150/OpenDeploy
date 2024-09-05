@@ -41,6 +41,14 @@ const kafka = new Kafka({
     password: process.env.KAFKA_PASSWORD,
     mechanism: "plain",
   },
+  retry: {
+    retries: 10,
+    initialRetryTime: 300,
+    factor: 0.2,
+    multiplier: 2,
+    maxRetryTime: 10000,
+  },
+  connectionTimeout: 10000,
 });
 
 const client = createClient({
