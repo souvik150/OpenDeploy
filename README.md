@@ -14,6 +14,7 @@ This project has the following main components:
 ## Deployed Links
 
 - [API Service](https://qeufiyrjd4.us-east-1.awsapprunner.com/)
+- [Proxy Service WIP]
 
 ## Documentation Link
 
