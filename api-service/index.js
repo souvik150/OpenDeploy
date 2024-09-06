@@ -92,6 +92,13 @@ const config = {
 app.use(express.json());
 app.use(cors());
 
+app.get("/", (req, res) => {
+  return res.json({
+    status: "success",
+    message: "Open Deploy API Server Running..",
+  });
+});
+
 app.post("/project", async (req, res) => {
   const schema = z.object({
     name: z.string(),

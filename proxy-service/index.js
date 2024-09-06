@@ -35,7 +35,14 @@ app.use(async (req, res) => {
       createdAt: "desc",
     },
   });
-
+  if (!project) {
+    return res.status(404).json({ error: "Project not found" });
+  }
+  if (!project.Deployement) {
+    return res
+      .status(404)
+      .json({ error: "No deployment found for this project" });
+  }
   const deployment = project.Deployement[0];
   if (!deployment) {
     return res.status(404).json({ error: "No deployment found" });
