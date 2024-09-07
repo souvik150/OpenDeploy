@@ -13,8 +13,9 @@ This project has the following main components:
 
 ## Deployed Links
 
-- [API Service](https://qeufiyrjd4.us-east-1.awsapprunner.com/)
-- [Proxy Service WIP]
+[opendeploy.souvik150.com](https://opendeploy.souvik150.com/)
+
+[powerful-inexpensive-furniture.opendeploy.souvik150.com/](https://powerful-inexpensive-furniture.opendeploy.souvik150.com/ ) 
 
 ## Documentation Link
 
