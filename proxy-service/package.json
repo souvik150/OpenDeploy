@@ -3,10 +3,15 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts | npx pino-pretty",
+    "build": "tsc",
+    "start": "node dist/server.js | npx pino-pretty",
+    "lint": "eslint 'src/**/*.ts'",
+    "test": "jest",
+    "log": "pino-pretty"
   },
   "keywords": [],
-  "author": "",
+  "author": "Souvik Mukherjee",
   "license": "ISC",
   "description": "",
   "dependencies": {
@@ -17,8 +22,11 @@
     "http-proxy": "^1.18.1"
   },
   "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/http-proxy": "^1.17.15",
     "@types/node": "^22.5.4",
     "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
     "typescript": "^5.5.4"
   }
 }
