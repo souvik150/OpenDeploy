@@ -19,8 +19,9 @@ This project has the following main components:
 
 ## Documentation Link
 
-[![Postman Documentation](https://img.shields.io/badge/Postman-Documentation-orange)](https://documenter.getpostman.com/view/19816367/2sAXjQ2WB4)
-This project is documented using Postman. You can find the documentation above.
+Below is the Postman collection to test the APIs
+
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://documenter.getpostman.com/view/19816367/2sAXjQ2WB4)
 
 ## Internal Packages
 
